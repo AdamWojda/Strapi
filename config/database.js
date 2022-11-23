@@ -7,7 +7,9 @@ module.exports = ({ env }) => ({
       database: env('PGDATABASE', 'railway'),
       user: env('PGUSER', 'postgres'),
       password: env('PGPASSWORD', 'l2On9haFkxaJxndnCuPy'),
-      ssl: env.bool(true),
+      ssl: {
+        rejectUnauthorized: env.bool('DATABASE_SSL_SELF', false),
+      },
     },
   },
 });
