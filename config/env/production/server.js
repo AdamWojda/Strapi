@@ -1,7 +1,6 @@
 module.exports = ({ env }) => ({
   connection: {
     client: 'postgres',
-    debug: true,
     connection: {
       host: env('PGHOST', 'containers-us-west-33.railway.app'),
       port: env.int('PGPORT', 5980),
