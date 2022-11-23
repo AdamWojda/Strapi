@@ -11,7 +11,4 @@ module.exports = ({ env }) => ({
       ssl: env.bool(true),
     },
   },
-  settings: {
-    forceMigration: false
-  },
 });
