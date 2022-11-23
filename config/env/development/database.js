@@ -13,7 +13,4 @@ module.exports = ({ env }) => ({
       },
     },
   },
-  settings: {
-    forceMigration: false
-  },
 });
