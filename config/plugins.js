@@ -1,10 +1,13 @@
-module.exports = ({ env }) => ({
-    'users-permissions': {
-      config: {
+module.exports = ({env}) => ({
+  'users-permissions': {
+    config: {
       jwtSecret: env('JWT_SECRET'),
-      },
     },
-    'import-export-entries': {
-      enabled: true,
-    },
-  });
+  },
+  'import-export-entries': {
+    enabled: true,
+  },
+  'publisher': {
+    enabled: true,
+  },
+});
